@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', 'sans-serif';
+    color: #424242;
+    overflow: hidden;
+    background: #f2f4f8;
+}
+.display {
+    text-align: center;
+    display: table;
+    height: 100%;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.wrapper {
+    /* display: flex; */
+    background-color: #c61f62;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cssbox {
+    margin: 10%;
+    padding: 100px;
+    background-color: blueviolet;
+    color: white;
+    font: bold;
+    font-family: 'Franklin Gothic Medium';
+}
+
+#keycode {
+    margin: 2%;
+}
+
+#key {
+    margin: 2%;
+}
+
+#code {
+    margin: 2%;
+}
+
+.flexcontain {
+    display: flex;
+    justify-content: center;
+}
+
+.github {
+    width: 250px;
+    height: 100px;
+    left: 500px;
+    top: 500px;
+    text-decoration: none;
+    color: black;
+}
+.github:hover{
+    filter: invert(100%);
+    transform: scale(1.1);
+    animation: skew 5s both infinite;
+    transition: all 1.5s;
+}
+@keyframes skew {
+    0%{transform: scale(1) skew(0)}
+    33%{transform: scale(1.5) skew(-5deg)}
+    66%{transform: scale(1.5) skew(5deg)}
+    100%{transform: scale(1) skew(0)}
+}
